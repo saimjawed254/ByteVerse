@@ -1,6 +1,7 @@
 import './hero.css'
 import { useEffect, useState } from "react"
 import axios from "axios";
+import { Link } from 'react-router-dom';
 
 function Hero(){
 
@@ -70,6 +71,10 @@ function Hero(){
         <div>
         <h1>Hero Page</h1>
         <h1>{msg}</h1>
+        <Link to='/register'>
+                            <div className="logout"><h2>Logout</h2>
+                            </div>
+        </Link>
         <button onClick={getLoc}>Get Location</button>
         </div>
         <div className="maps">
