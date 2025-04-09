@@ -63,7 +63,7 @@ function Hero(){
         <button onClick={getLoc}>Get Location</button>
         </div>
         <div className="maps">
-            <iframe className="gmap" src={"http://maps.google.com/maps?q="+latitude+","+longitude+"&z=15&output=embed"} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe className="gmap" src={"https://maps.google.com/maps?q="+latitude+","+longitude+"&z=15&output=embed"} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
         </div>
         </>
     )
