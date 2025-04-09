@@ -1,4 +1,19 @@
+import { useEffect, useState } from "react"
+import axios from "axios";
+
 function Register(){
+
+    const [msg,setMsg]= useState("");
+
+    useEffect(()=>{
+        const fetchData = async()=>{
+            const data= await axios.get("http://localhost:3000/register",{
+                withCredentials: true
+            });
+            setMsg(data.data.message);
+        } 
+        fetchData();
+    },[]);
 
     return(
         <>

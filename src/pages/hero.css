@@ -1,0 +1,13 @@
+.maps{
+    
+    width: 30vw;
+    height: 30vw;
+    /* background: #000; */
+    border: 1vw solid;
+    border-color: aqua;
+}
+
+.gmap{
+    width: 30vw;
+    height: 30vw;
+}
