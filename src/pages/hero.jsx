@@ -19,6 +19,16 @@ function Hero(){
         fetchData();
     },[]);
 
+    useEffect(()=>{
+        const fetchData = async()=>{
+            const data= await axios.get("https://byteversebackend.onrender.com/register/",{
+                withCredentials: true
+            });
+            console.log(data.data.message);
+        } 
+        fetchData();
+    },[]);
+
         const getLoc=()=>{
             if(navigator.geolocation){
                 navigator.geolocation.getCurrentPosition(success,error);
