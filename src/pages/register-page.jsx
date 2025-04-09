@@ -7,7 +7,7 @@ function Register(){
 
     useEffect(()=>{
         const fetchData = async()=>{
-            const data= await axios.get("http://localhost:3000/register",{
+            const data= await axios.get("https://byteversebackend.onrender.com/logout",{
                 withCredentials: true
             });
             setMsg(data.data.message);
